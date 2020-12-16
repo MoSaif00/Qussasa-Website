@@ -313,14 +313,14 @@ section.gallery .project-gallery .overlay-gallery:target a.close {
   opacity: 1;
   max-width: 100%;
 }
-/* section.clients {
+section.clients {
   padding: 80px 80px;
 }
-section.clients .clients-list a img {
+section.clients a img {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-} */
+}
 
 section.statistics {
   background-image: url(../images/header-bg-2.jpg);
@@ -406,7 +406,78 @@ section.contacts .cmxform {
 section.contacts .form form .error {
   color: rgb(248, 138, 138);
 }
+footer .top-footer {
+  background-color: rgb(41, 39, 39);
+  padding: 75px 0;
+}
+footer .top-footer h3 {
+  font-size: 18px;
+  color: #e46640;
+  line-height: 45px;
+  margin-bottom: 30px;
+  position: relative;
+}
+footer .top-footer h3:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background-color: #5c5c5c;
+}
+footer .top-footer p {
+  font-size: 15px;
+  color: #919191;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+footer .top-footer ul {
+  padding: 0;
+}
+footer .top-footer ul.social li {
+  margin-left: 10px;
+}
+footer .top-footer ul.social li a i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #4d4b4b;
+  color: #dfdbdb;
+  transition: all 0.3s ease;
+}
+footer .top-footer ul.social li a:hover i {
+  background-color: #e46640;
+}
 
+footer .top-footer ul.contact-us li {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #919191;
+}
+footer .top-footer ul.contact-us li:last-of-type {
+  margin-bottom: 0px;
+}
+footer .top-footer ul.contact-us li i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #3d3c3c;
+  color: #adadad;
+  margin-right: 20px;
+}
+footer .copyright {
+  background-color: rgb(37, 37, 37);
+}
+footer .copyright p {
+  color: #d3d1d1;
+  font-size: 18px;
+  line-height: 75px;
+}
 @media (max-width: 767px) {
   nav.navbar .container {
     max-width: 100%;
