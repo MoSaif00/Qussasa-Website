@@ -15,4 +15,8 @@ $(document).ready(function () {
       function () {}
     );
   });
+  $('.timer').countTo();
+  $(function () {
+    $('#commentForm').validate();
+  });
 });

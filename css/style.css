@@ -336,11 +336,77 @@ section.statistics .overlay {
 section.statistics .overlay .stat img {
   width: 30%;
 }
+section.statistics .overlay .stat .count {
+  color: #ecdeda;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+}
 section.statistics .overlay .stat p {
   font-size: 18px;
   color: #ecdeda;
   line-height: 22px;
 }
+section.contacts {
+  background-color: white;
+  padding-top: 110px;
+}
+section.contacts .info h3 {
+  font-size: 24px;
+  line-height: 50px;
+  color: rgb(41, 39, 39);
+  font-weight: bold;
+}
+section.contacts .info ul {
+  padding: 0;
+}
+section.contacts .info ul li {
+  font-size: 18px;
+  color: #e46640;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+section.contacts .info ul li i {
+  margin-right: 8px;
+}
+section.contacts .form h3 {
+  font-size: 24px;
+  line-height: 50px;
+  color: rgb(41, 39, 39);
+  font-weight: bold;
+  margin: 50px auto 20px;
+}
+section.contacts .form input,
+section.contacts .form textarea {
+  color: #919191;
+  border: 2px solid #eee;
+  background-color: white;
+  border-radius: 4px;
+  font-family: content-font;
+  font-size: 15px;
+  line-height: 25px;
+}
+section.contacts .form form button {
+  background-color: #e46640;
+  font-size: 18px;
+  color: white;
+  font-family: headers-font;
+  line-height: 25px;
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: 0;
+  margin-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section.contacts .cmxform {
+  width: 65%;
+  margin: 0 auto 50px;
+}
+section.contacts .form form .error {
+  color: rgb(248, 138, 138);
+}
+
 @media (max-width: 767px) {
   nav.navbar .container {
     max-width: 100%;
