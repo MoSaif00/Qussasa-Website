@@ -12,10 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+/* NavBar */
 nav.navbar {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-
   text-align: center;
   z-index: 20;
 }
@@ -35,13 +35,14 @@ nav.navbar ul.navbar-nav li a.nav-link {
   padding-left: 1.3rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-family: headers-font;
+  text-transform: uppercase;
 }
 nav.navbar ul.navbar-nav li a.nav-link:hover,
 nav.navbar ul.navbar-nav li a.nav-link.active {
   color: #e46640;
   background-color: rgb(41, 39, 39);
 }
-
 nav.navbar button.navbar-toggler {
   margin: 30px auto;
   -webkit-transition: all 1s ease;
@@ -60,20 +61,19 @@ nav.navbar.noTransparrent button.navbar-toggler {
 nav.navbar.noTransparrent button.navbar-toggler span {
   color: #e46640;
 }
-
 nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
   color: #e46640;
 }
-
 nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
 nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
   color: #e46640;
   background-color: rgb(41, 39, 39);
 }
-
 nav.navbar.noTransparrent .navbar-brand img {
   width: 70%;
 }
+
+/* Header */
 header {
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
@@ -111,7 +111,6 @@ header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
 
   transform: translateY(-50px);
 }
-
 header
   .overlay
   .slider
@@ -121,7 +120,6 @@ header
   h3 {
   transform: translateY(0px);
 }
-
 header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
   bottom: 25%;
 }
@@ -129,7 +127,6 @@ header .overlay .slider .carousel-inner .carousel-item .carousel-caption a {
   font-size: 18px;
   color: white;
   background-color: #e6714d;
-  /* background-color: rgb(41, 39, 39); */
   line-height: 50px;
   border-radius: 25px;
   padding: 0 2rem 0 2rem;
@@ -158,7 +155,6 @@ header
   color: #e6714d;
   background-color: rgb(41, 39, 39);
 }
-
 header .overlay .slider .carousel-control-prev i,
 header .overlay .slider .carousel-control-next i {
   border: 2px solid white;
@@ -171,7 +167,6 @@ header .overlay .slider .carousel-control-prev i {
 header .overlay .slider .carousel-control-next i {
   right: 20px;
 }
-
 .title {
   margin-bottom: 50px;
 }
@@ -179,14 +174,16 @@ header .overlay .slider .carousel-control-next i {
   font-size: 33px;
   line-height: 50px;
   text-transform: uppercase;
+  font-family: headers-font;
 }
+
+/* Services Section */
 section.services {
   padding: 80px 0;
 }
 section.services .card {
   background-color: white;
   margin-bottom: 50px;
-
   width: 100%;
   height: 250px;
   transition: all 1s ease;
@@ -204,6 +201,7 @@ section.services .card .card-block h4 {
   font-size: 25px;
   color: rgb(41, 39, 39);
   line-height: 35px;
+  text-transform: uppercase;
 }
 section.services .card .card-block p {
   font-size: 15px;
@@ -212,13 +210,11 @@ section.services .card .card-block p {
   opacity: 0;
   transition: all 1s ease;
 }
-
 section.services .card:hover .card-block p {
   opacity: 1;
 }
-/* section.gallery .project-gallery {
-  margin-bottom: 50px;
-} */
+
+/* Projects Section */
 section.gallery .project-gallery a {
   position: relative;
   display: inline-block;
@@ -227,7 +223,6 @@ section.gallery .project-gallery a {
 }
 section.gallery .project-gallery a img {
   width: 100%;
-  /* height: 250px; */
 }
 section.gallery .project-gallery a .hover {
   position: absolute;
@@ -251,7 +246,6 @@ section.gallery .project-gallery a .hover i {
 section.gallery .project-gallery a:hover .hover {
   opacity: 0.8;
 }
-
 section.gallery .project-gallery .overlay-gallery {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -267,7 +261,6 @@ section.gallery .project-gallery .overlay-gallery {
   transition: all 1s ease;
   margin-top: -100vh;
 }
-
 section.gallery .project-gallery .overlay-gallery img {
   width: 100%;
 }
@@ -280,6 +273,7 @@ section.gallery .project-gallery .overlay-gallery .gallery-text h3 {
   margin-bottom: 30px;
   color: #e46640;
   text-transform: uppercase;
+  font-family: header-font;
 }
 section.gallery .project-gallery .overlay-gallery .gallery-text ul {
   padding-left: 0;
@@ -305,6 +299,7 @@ section.gallery .project-gallery .overlay-gallery .gallery-text a.visit {
   background-color: #e6714d;
   transition: all 0.5s ease-in-out;
   width: auto;
+  text-transform: uppercase;
 }
 section.gallery .project-gallery .overlay-gallery .gallery-text a.visit:hover {
   text-decoration: none;
@@ -339,6 +334,8 @@ section.gallery .project-gallery .overlay-gallery:target a.close {
   opacity: 1;
   max-width: 100%;
 }
+
+/* Clients Section */
 section.clients {
   padding: 80px 80px;
 }
@@ -348,6 +345,7 @@ section.clients a img {
   padding: 20px;
 }
 
+/* Statistics Section */
 section.statistics {
   background-image: url(../images/header-bg-2.jpg);
   background-position: center center;
@@ -372,7 +370,11 @@ section.statistics .overlay .stat p {
   font-size: 18px;
   color: #ecdeda;
   line-height: 22px;
+  text-transform: uppercase;
+  font-family: headers-font;
 }
+
+/* contacts Section */
 section.contacts {
   background-color: white;
   padding-top: 110px;
@@ -382,6 +384,8 @@ section.contacts .info h3 {
   line-height: 50px;
   color: rgb(41, 39, 39);
   font-weight: bold;
+  font-family: headers-font;
+  text-transform: uppercase;
 }
 section.contacts .info ul {
   padding: 0;
@@ -401,6 +405,8 @@ section.contacts .form h3 {
   color: rgb(41, 39, 39);
   font-weight: bold;
   margin: 50px auto 20px;
+  font-family: headers-font;
+  text-transform: uppercase;
 }
 section.contacts .form input,
 section.contacts .form textarea {
@@ -409,7 +415,7 @@ section.contacts .form textarea {
   background-color: white;
   border-radius: 4px;
   font-family: content-font;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 25px;
 }
 section.contacts .form form button {
@@ -432,6 +438,8 @@ section.contacts .cmxform {
 section.contacts .form form .error {
   color: rgb(248, 138, 138);
 }
+
+/* footer */
 footer .top-footer {
   background-color: rgb(41, 39, 39);
   padding: 75px 0;
@@ -442,6 +450,7 @@ footer .top-footer h3 {
   line-height: 45px;
   margin-bottom: 30px;
   position: relative;
+  font-family: headers-font;
 }
 footer .top-footer h3:before {
   content: '';
@@ -477,7 +486,6 @@ footer .top-footer ul.social li a i {
 footer .top-footer ul.social li a:hover i {
   background-color: #e46640;
 }
-
 footer .top-footer ul.contact-us li {
   margin-bottom: 35px;
   font-size: 18px;
@@ -505,16 +513,16 @@ footer .copyright p {
   line-height: 75px;
   margin-bottom: 0;
 }
+
+/* responsive for all different of screens */
 @media (max-width: 980px) {
   nav.navbar ul.navbar-nav li a.nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-
   header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
     font-size: 26px;
   }
-
   header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
     bottom: 35%;
   }
@@ -531,7 +539,6 @@ footer .copyright p {
     outline: none;
     margin: 0 !important;
   }
-
   nav.navbar .navbar-brand img {
     width: 80%;
   }
@@ -551,12 +558,10 @@ footer .copyright p {
     line-height: 25px;
     margin-bottom: 26px;
   }
-
   section.gallery .project-gallery .overlay-gallery .gallery-text a.visit {
     font-size: 13px;
     line-height: 40px;
   }
-
   section.contacts .cmxform {
     width: 100%;
   }
@@ -568,20 +573,16 @@ footer .copyright p {
     right: 5%;
     bottom: 20%;
   }
-
   header .overlay .slider .carousel-control-prev,
   header .overlay .slider .carousel-control-next {
     display: none;
   }
-
   .project-gallery .col-md > .col-sm > a {
     display: block !important;
   }
-
   .project-gallery .col-md > .col-sm > a img {
     width: 100%;
   }
-
   section.gallery .project-gallery .overlay-gallery img {
     width: 65%;
   }
