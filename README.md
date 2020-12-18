@@ -4,7 +4,8 @@
 
 ### ✨ [Demo](https://mosaif00.github.io/Qussasa-Website/)
 
-![alt text](screen1.gif)
+![alt text](screen01.gif)
+![alt text](screen02.gif)
 
 **Built With :**
 
