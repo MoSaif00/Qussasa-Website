@@ -9,16 +9,20 @@
 
 body {
   font-family: content-font;
-}
-header {
-  background-image: url(../images/header-bg.jpg);
-  background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
+nav.navbar {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+
+  text-align: center;
+  z-index: 20;
+}
 nav.navbar .navbar-brand img {
-  width: 70%;
+  width: 90%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 nav.navbar ul.navbar-nav {
   padding-left: 0;
@@ -38,10 +42,6 @@ nav.navbar ul.navbar-nav li a.nav-link.active {
   background-color: rgb(41, 39, 39);
 }
 
-nav.navbar {
-  text-align: right;
-  z-index: 20;
-}
 nav.navbar button.navbar-toggler {
   margin: 30px auto;
   -webkit-transition: all 1s ease;
@@ -50,10 +50,36 @@ nav.navbar button.navbar-toggler {
 nav.navbar button.navbar-toggler span {
   color: rgb(41, 39, 39);
 }
+nav.navbar.noTransparrent {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+nav.navbar.noTransparrent button.navbar-toggler {
+  margin: 30px auto;
+}
 nav.navbar.noTransparrent button.navbar-toggler span {
   color: #e46640;
 }
 
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+  color: #e46640;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+  color: #e46640;
+  background-color: rgb(41, 39, 39);
+}
+
+nav.navbar.noTransparrent .navbar-brand img {
+  width: 70%;
+}
+header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
 header .overlay {
   background: linear-gradient(
     to left,
@@ -79,7 +105,7 @@ header
   opacity: 1;
 }
 header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 45px;
   transition: all 1s ease;
 
@@ -477,21 +503,90 @@ footer .copyright p {
   color: #d3d1d1;
   font-size: 18px;
   line-height: 75px;
+  margin-bottom: 0;
 }
+@media (max-width: 980px) {
+  nav.navbar ul.navbar-nav li a.nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 26px;
+  }
+
+  header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+    bottom: 35%;
+  }
+}
+
 @media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0rem;
+  }
   nav.navbar .container {
-    max-width: 100%;
+    width: 100%;
   }
   .navbar .navbar-toggler {
     outline: none;
     margin: 0 !important;
   }
-  .navbar .navbar-toggler span {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-  }
+
   nav.navbar .navbar-brand img {
     width: 80%;
+  }
+  nav.navbar .navbar-collapse {
+    background-color: #e6714d;
+  }
+  nav.navbar.noTransparrent .navbar-collapse {
+    background-color: #ffffff;
+  }
+  section.gallery .project-gallery .overlay-gallery .gallery-text h3 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  section.gallery .project-gallery .overlay-gallery .gallery-text p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 26px;
+  }
+
+  section.gallery .project-gallery .overlay-gallery .gallery-text a.visit {
+    font-size: 13px;
+    line-height: 40px;
+  }
+
+  section.contacts .cmxform {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+    left: 5%;
+    right: 5%;
+    bottom: 20%;
+  }
+
+  header .overlay .slider .carousel-control-prev,
+  header .overlay .slider .carousel-control-next {
+    display: none;
+  }
+
+  .project-gallery .col-md > .col-sm > a {
+    display: block !important;
+  }
+
+  .project-gallery .col-md > .col-sm > a img {
+    width: 100%;
+  }
+
+  section.gallery .project-gallery .overlay-gallery img {
+    width: 65%;
+  }
+  section.clients .col-sm-3 > a img {
+    width: 45%;
+    display: block;
   }
 }
