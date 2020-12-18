@@ -1,7 +1,7 @@
 {
   "name": "Qussasa-Website",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\"> Qussasa Landing Page   👋</h1>",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
