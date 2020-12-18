@@ -1,0 +1,592 @@
+@font-face {
+  font-family: content-font;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: headers-font;
+  src: url(../fonts/RozhaOne-Regular.ttf);
+}
+
+body {
+  font-family: content-font;
+  overflow-x: hidden;
+}
+
+nav.navbar {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+
+  text-align: center;
+  z-index: 20;
+}
+nav.navbar .navbar-brand img {
+  width: 90%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+nav.navbar ul.navbar-nav {
+  padding-left: 0;
+}
+nav.navbar ul.navbar-nav li a.nav-link {
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
+  color: #e46640;
+  background-color: rgb(41, 39, 39);
+}
+
+nav.navbar button.navbar-toggler {
+  margin: 30px auto;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+nav.navbar button.navbar-toggler span {
+  color: rgb(41, 39, 39);
+}
+nav.navbar.noTransparrent {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+nav.navbar.noTransparrent button.navbar-toggler {
+  margin: 30px auto;
+}
+nav.navbar.noTransparrent button.navbar-toggler span {
+  color: #e46640;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+  color: #e46640;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+  color: #e46640;
+  background-color: rgb(41, 39, 39);
+}
+
+nav.navbar.noTransparrent .navbar-brand img {
+  width: 70%;
+}
+header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+header .overlay {
+  background: linear-gradient(
+    to left,
+    rgba(243, 238, 236, 0.5) 0%,
+    rgba(153, 143, 143, 0.8) 100%
+  );
+  height: 100vh;
+}
+
+header .overlay .slider .carousel-inner .carousel-item {
+  min-height: 100vh;
+  opacity: 0;
+}
+header .overlay .slider .carousel-inner .carousel-item.active {
+  opacity: 1;
+}
+header
+  .overlay
+  .slider
+  .carousel-inner
+  .carousel-item.active
+  .carousel-caption {
+  opacity: 1;
+}
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 35px;
+  line-height: 45px;
+  transition: all 1s ease;
+
+  transform: translateY(-50px);
+}
+
+header
+  .overlay
+  .slider
+  .carousel-inner
+  .carousel-item.active
+  .carousel-caption
+  h3 {
+  transform: translateY(0px);
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+  bottom: 25%;
+}
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption a {
+  font-size: 18px;
+  color: white;
+  background-color: #e6714d;
+  /* background-color: rgb(41, 39, 39); */
+  line-height: 50px;
+  border-radius: 25px;
+  padding: 0 2rem 0 2rem;
+  margin-top: 30px;
+  display: inline-block;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+header
+  .overlay
+  .slider
+  .carousel-inner
+  .carousel-item.active
+  .carousel-caption
+  a {
+  transform: translateY(0px);
+}
+header
+  .overlay
+  .slider
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  a:hover {
+  text-decoration: none;
+  color: #e6714d;
+  background-color: rgb(41, 39, 39);
+}
+
+header .overlay .slider .carousel-control-prev i,
+header .overlay .slider .carousel-control-next i {
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 30px 20px 30px 20px;
+}
+header .overlay .slider .carousel-control-prev i {
+  left: 20px;
+}
+header .overlay .slider .carousel-control-next i {
+  right: 20px;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+.title h2 {
+  font-size: 33px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+section.services {
+  padding: 80px 0;
+}
+section.services .card {
+  background-color: white;
+  margin-bottom: 50px;
+
+  width: 100%;
+  height: 250px;
+  transition: all 1s ease;
+  padding: 0 10px 0 10px;
+}
+section.services .card:hover {
+  height: fit-content;
+  padding: 0 10px 20px 10px;
+}
+section.services .card img {
+  width: 120px;
+  margin: 40px auto 0;
+}
+section.services .card .card-block h4 {
+  font-size: 25px;
+  color: rgb(41, 39, 39);
+  line-height: 35px;
+}
+section.services .card .card-block p {
+  font-size: 15px;
+  color: #919191;
+  line-height: 20px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+section.services .card:hover .card-block p {
+  opacity: 1;
+}
+/* section.gallery .project-gallery {
+  margin-bottom: 50px;
+} */
+section.gallery .project-gallery a {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+section.gallery .project-gallery a img {
+  width: 100%;
+  /* height: 250px; */
+}
+section.gallery .project-gallery a .hover {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: #e6714d;
+  color: white;
+  opacity: 0;
+  z-index: 9;
+  transition: all 0.5s ease;
+}
+section.gallery .project-gallery a .hover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+section.gallery .project-gallery a:hover .hover {
+  opacity: 0.8;
+}
+
+section.gallery .project-gallery .overlay-gallery {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 30;
+  text-align: left;
+  padding: 5% 10%;
+  opacity: 0;
+  transition: all 1s ease;
+  margin-top: -100vh;
+}
+
+section.gallery .project-gallery .overlay-gallery img {
+  width: 100%;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text {
+  margin: 40px auto 0px;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text h3 {
+  font-size: 27px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  color: #e46640;
+  text-transform: uppercase;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text ul {
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text ul li a {
+  color: #6b6b6b;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text p {
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 50px;
+  color: #919191;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text a.visit {
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 25px;
+  padding: 0px 30px;
+  color: white;
+  background-color: #e6714d;
+  transition: all 0.5s ease-in-out;
+  width: auto;
+}
+section.gallery .project-gallery .overlay-gallery .gallery-text a.visit:hover {
+  text-decoration: none;
+  color: #e6714d;
+  background-color: rgb(41, 39, 39);
+}
+section.gallery .project-gallery .overlay-gallery a.close {
+  z-index: 10;
+  color: #e46640;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  width: auto;
+}
+section.gallery .project-gallery .overlay-gallery a.close:hover {
+  text-decoration: none;
+  color: rgba(224, 214, 214, 0.9);
+}
+section.gallery .project-gallery .overlay-gallery:target {
+  opacity: 1;
+  bottom: 0px;
+  left: 0px;
+  padding: 5% 10%;
+  margin: 0;
+}
+section.gallery .project-gallery .overlay-gallery:target img,
+section.gallery .project-gallery .overlay-gallery:target a.close {
+  opacity: 1;
+  max-width: 100%;
+}
+section.clients {
+  padding: 80px 80px;
+}
+section.clients a img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section.statistics {
+  background-image: url(../images/header-bg-2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.statistics .overlay {
+  background-color: #e46640;
+  opacity: 0.8;
+  padding: 100px 0;
+}
+section.statistics .overlay .stat img {
+  width: 30%;
+}
+section.statistics .overlay .stat .count {
+  color: #ecdeda;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+}
+section.statistics .overlay .stat p {
+  font-size: 18px;
+  color: #ecdeda;
+  line-height: 22px;
+}
+section.contacts {
+  background-color: white;
+  padding-top: 110px;
+}
+section.contacts .info h3 {
+  font-size: 24px;
+  line-height: 50px;
+  color: rgb(41, 39, 39);
+  font-weight: bold;
+}
+section.contacts .info ul {
+  padding: 0;
+}
+section.contacts .info ul li {
+  font-size: 18px;
+  color: #e46640;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+section.contacts .info ul li i {
+  margin-right: 8px;
+}
+section.contacts .form h3 {
+  font-size: 24px;
+  line-height: 50px;
+  color: rgb(41, 39, 39);
+  font-weight: bold;
+  margin: 50px auto 20px;
+}
+section.contacts .form input,
+section.contacts .form textarea {
+  color: #919191;
+  border: 2px solid #eee;
+  background-color: white;
+  border-radius: 4px;
+  font-family: content-font;
+  font-size: 15px;
+  line-height: 25px;
+}
+section.contacts .form form button {
+  background-color: #e46640;
+  font-size: 18px;
+  color: white;
+  font-family: headers-font;
+  line-height: 25px;
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: 0;
+  margin-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section.contacts .cmxform {
+  width: 65%;
+  margin: 0 auto 50px;
+}
+section.contacts .form form .error {
+  color: rgb(248, 138, 138);
+}
+footer .top-footer {
+  background-color: rgb(41, 39, 39);
+  padding: 75px 0;
+}
+footer .top-footer h3 {
+  font-size: 18px;
+  color: #e46640;
+  line-height: 45px;
+  margin-bottom: 30px;
+  position: relative;
+}
+footer .top-footer h3:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background-color: #5c5c5c;
+}
+footer .top-footer p {
+  font-size: 15px;
+  color: #919191;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+footer .top-footer ul {
+  padding: 0;
+}
+footer .top-footer ul.social li {
+  margin-left: 10px;
+}
+footer .top-footer ul.social li a i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #4d4b4b;
+  color: #dfdbdb;
+  transition: all 0.3s ease;
+}
+footer .top-footer ul.social li a:hover i {
+  background-color: #e46640;
+}
+
+footer .top-footer ul.contact-us li {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #919191;
+}
+footer .top-footer ul.contact-us li:last-of-type {
+  margin-bottom: 0px;
+}
+footer .top-footer ul.contact-us li i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #3d3c3c;
+  color: #adadad;
+  margin-right: 20px;
+}
+footer .copyright {
+  background-color: rgb(37, 37, 37);
+}
+footer .copyright p {
+  color: #d3d1d1;
+  font-size: 18px;
+  line-height: 75px;
+  margin-bottom: 0;
+}
+@media (max-width: 980px) {
+  nav.navbar ul.navbar-nav li a.nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 26px;
+  }
+
+  header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+    bottom: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0rem;
+  }
+  nav.navbar .container {
+    width: 100%;
+  }
+  .navbar .navbar-toggler {
+    outline: none;
+    margin: 0 !important;
+  }
+
+  nav.navbar .navbar-brand img {
+    width: 80%;
+  }
+  nav.navbar .navbar-collapse {
+    background-color: #e6714d;
+  }
+  nav.navbar.noTransparrent .navbar-collapse {
+    background-color: #ffffff;
+  }
+  section.gallery .project-gallery .overlay-gallery .gallery-text h3 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  section.gallery .project-gallery .overlay-gallery .gallery-text p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 26px;
+  }
+
+  section.gallery .project-gallery .overlay-gallery .gallery-text a.visit {
+    font-size: 13px;
+    line-height: 40px;
+  }
+
+  section.contacts .cmxform {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+    left: 5%;
+    right: 5%;
+    bottom: 20%;
+  }
+
+  header .overlay .slider .carousel-control-prev,
+  header .overlay .slider .carousel-control-next {
+    display: none;
+  }
+
+  .project-gallery .col-md > .col-sm > a {
+    display: block !important;
+  }
+
+  .project-gallery .col-md > .col-sm > a img {
+    width: 100%;
+  }
+
+  section.gallery .project-gallery .overlay-gallery img {
+    width: 65%;
+  }
+  section.clients .col-sm-3 > a img {
+    width: 45%;
+    display: block;
+  }
+}
