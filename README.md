@@ -24,6 +24,12 @@
 - performed with Html5 , Bootstrap
 ```
 
+## Issues
+
+```sh
+- The Nav-toggler Button is out of the screen to the right when it is used on mobile phone
+```
+
 ## Author
 
 👤 **MohammedSaif**
