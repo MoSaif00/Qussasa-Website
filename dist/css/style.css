@@ -6,6 +6,15 @@
   font-family: headers-font;
   src: url(../fonts/RozhaOne-Regular.ttf);
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: content-font;
@@ -581,6 +590,9 @@ footer .copyright p {
     display: block !important;
   }
   .project-gallery .col-md > .col-sm > a img {
+    width: 100%;
+  }
+  .map iframe {
     width: 100%;
   }
   section.gallery .project-gallery .overlay-gallery img {
